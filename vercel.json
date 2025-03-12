@@ -4,6 +4,7 @@
     { "src": "**/*", "use": "@vercel/static" }
   ],
   "routes": [
+    { "src": "/sitemap.xml", "dest": "/site/sitemap.xml" },
     { "src": "/static/css/(.*)", "dest": "/css/$1" },
     { "src": "/static/js/(.*)", "dest": "/js/$1" },
     { "src": "/static/img/(.*)", "dest": "/images/$1" },
@@ -19,7 +20,6 @@
     { "src": "/privacy/?", "dest": "/site/privacy/index.html" },
     { "src": "/terms/?", "dest": "/site/terms/index.html" },
     { "src": "/thank-you/?", "dest": "/site/thank-you/index.html" },
-    { "src": "/sitemap.xml", "dest": "/site/sitemap.xml" },
     { "src": "/([^/]+)/([^/]+)/?$", "dest": "/site/$1/$2/index.html" },
     { "src": "/([^/]+)/?$", "dest": "/site/$1/index.html" },
     { "src": "/?", "dest": "/site/index.html" },
