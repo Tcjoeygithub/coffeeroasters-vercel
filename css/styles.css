@@ -82,8 +82,9 @@
             justify-content: center;
         }
         .hero-section { 
-            height: 400px;
+            min-height: 350px;
             padding-top: 70px;
+            padding-bottom: 30px;
         }
         .hero-content h1 { font-size: 2rem; }
         .roasters-grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
@@ -102,8 +103,9 @@
         nav ul { flex-direction: column; align-items: center; }
         nav ul li { margin: 5px 0; }
         .hero-section { 
-            height: 450px;
+            min-height: 300px;
             padding-top: 80px;
+            padding-bottom: 30px;
         }
         .hero-content h1 { font-size: 1.5rem; }
         .states-list, .cities-list { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
@@ -150,7 +152,9 @@
     /* Hero */
     .hero-section { 
         position: relative; 
-        height: 400px; 
+        height: auto; 
+        min-height: 400px;
+        padding-bottom: 40px;
         background-image: url('https://directoryimagestorage.s3.us-east-2.amazonaws.com/roasters/roasters/coffee-roaster-hero-image.jpeg');
         background-size: cover; 
         background-position: center; 
@@ -163,7 +167,7 @@
         padding-top: 60px;
     }
     .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-    .hero-content { position: relative; z-index: 1; padding: 0 20px; max-width: 100%; }
+    .hero-content { position: relative; z-index: 1; padding: 20px; max-width: 100%; }
     .hero-content h1 { font-size: 2.5rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
     
     /* Sections */
