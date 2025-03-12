@@ -107,5 +107,5 @@ def generate_sitemap(site_dir, domain):
 
 if __name__ == "__main__":
     site_dir = "site"
-    domain = "https://coffeeroastersnearme.com"
+    domain = "https://coffeeroasternearme.com"
     generate_sitemap(site_dir, domain) 
